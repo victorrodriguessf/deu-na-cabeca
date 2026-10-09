@@ -77,12 +77,4 @@ Verificação opcional de sintaxe JavaScript, com Node.js instalado:
 node --check public/js/app.js
 ```
 
-A suíte PHP cobre os widgets e créditos na página, ausência de consultas externas do backend e retirada da antiga API e do agendador. A interface também foi verificada no Edge em computador e celular.
 
-## Publicar o site
-
-Hospede em um serviço compatível com Laravel/PHP, apontando a raiz web para `public/`. Configure HTTPS, `APP_ENV=production`, `APP_DEBUG=false` e `APP_URL` no ambiente da hospedagem. Se houver uma Content Security Policy, permita `https://www.eojogodobicho.com` em `frame-src`.
-
-O servidor PHP integrado e o iniciador Windows são destinados ao desenvolvimento local. Publicar o código no GitHub não hospeda a aplicação Laravel.
-
-Mais detalhes em [PROJETO.md](PROJETO.md).
